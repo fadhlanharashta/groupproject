@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url("../gambar/wwdc-2023-1920x1080-5k-24623.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  padding: 1rem 7%;
+  background-color: rgba(48, 53, 52, 0.841);
+  border-top: 1px solid rgba(152, 150, 150, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* bottom: 0; */
+  z-index: 9999;
+}
+
+header {
+  margin-top: 3em;
+  text-align: center;
+}
+
+title{
+  float: left;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#container3D canvas {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 5;
+  left: 0;
+}
+
+
+.hotspot {
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  cursor: pointer;
+  color: whitesmoke;
+  display: block;
+  padding: 5px;
+  background-color: rgb(9, 15, 37);
+  margin: 5px;
+
+}
+
+.Navbar .Navbar-Nav a{
+  color: aliceblue;
+  margin: 0 0.5;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  padding-right: 2rem;
+}
+.Navbar .Navbar-Nav a:hover {
+  color: rgba(255, 0, 0, 0.7);
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.Navbar .Navbar-Nav a::after{
+  content: '';
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid rgb(181, 83, 83);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.Navbar .Navbar-Nav a:hover::after{
+  transform: scaleX(0.6);
+}
+
+
+.Navbar .Navbar-logo{
+  font-size: 2rem;
+  font-weight: 1000;
+  color: WHITE;
+  /* text-decoration: none; */
+}
+.Navbar .Navbar-logo span{
+  color: red;
+}
+
+.Navbar .Navbar-Nav{
+  font-size: 1.4rem;
+  align-items: center;
+  margin-left: 12;
+  font-weight: 1000;
+}
+
+#container3D {
+  position: relative;
+}
+
+#textboxContainer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: rgba(86, 86, 88, 0.8); /* Change the background color to dark blue */
+  color: white; /* Change the font color to white */
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#textboxContent {
+  height: 100%;
+  overflow: auto;
+}
+
